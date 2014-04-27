@@ -1,0 +1,2 @@
+g++ -o simulator `pkg-config --cflags playerc++` main.cpp `pkg-config --libs playerc++` moveRobot.cpp Node.cpp AStar.cpp robotTurn.cpp
+

@@ -1,0 +1,21 @@
+occupancy.grid contains an occupancy grid (map) of the environment.
+You may read in this file, or just hard code the values (eg as a 2d array)
+in your program. 
+
+`0` Represents an empty tile - ie your robot can move there.
+`1` Represents an obstacle in the tile - ie your robot cannot move there.
+`2` Is the starting point of the robot.
+`3` Is the desired finish.
+
+You should be able to see a blue grid in the stage window with some cells
+coloured grey, other white. This is a visual representation of the occupancy
+grid.
+
+occupancy_with_error.grid contains an innacurate map for those wishing to deal
+with such problems.
+
+If you want to change the start position of the robot you must change it in
+the occupancy grid AND in simple.world. To change the simple.world file, look
+for the `pose' line in the pioneer2dx_base class. The first two values are
+the x/y starting coordinates. The default is 9.5/9.5 which should start the
+robot in the upper right corner.
